@@ -75,9 +75,10 @@ if you have any error running the file just run the code below
 ```bash 
 sed -i -e 's/\r$//' Astro.sh
 ./Astro.sh
+```
+🌟 You are all set. enjoy
 
-
-
+## 🙏 Support
 <p align="left"> <a href="https://twitter.com/soroush_nk80" target="blank"><img src="https://img.shields.io/twitter/follow/soroush_nk80?logo=twitter&style=for-the-badge" alt="soroush_nk80" /></a> </p>
 
 
@@ -94,7 +95,7 @@ sed -i -e 's/\r$//' Astro.sh
 <a href="https://twitter.com/soroush_nk80" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="soroush_nk80" height="30" width="40" /></a>
 </p>
 
-<h3 align="left">Languages and Tools:</h3>
+<h3 align="left">Languages and Tools used:</h3>
 <p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> </p>
 
 <h3 align="left">Support:</h3>
