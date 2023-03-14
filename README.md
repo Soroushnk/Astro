@@ -1,12 +1,85 @@
 <h1 align="center"> 🚀 Astro 🚀 </h1>
 <h3 align="center"> 🎗️A bash script that helps bypass GFW 🎗️</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=soroushnk&label=Profile%20views&color=0e75b6&style=flat" alt="soroushnk" /> </p>
-<img src="https://img.shields.io/github/license/rahuldkjain/github-profile-readme-generator?style=flat-square" alt="github-profile-readme-generator license" />
+<p align="center"> <img src="https://komarev.com/ghpvc/?username=soroushnk&label=Profile%20views&color=0e75b6&style=flat" alt="soroushnk" />
+<img src="https://img.shields.io/github/license/soroushnk/Astro?style=flat-square" alt="github-profile-readme-generator license" /> </p>
+
+ ### By Soroush Nekoozadeh
+ 
+ 
+### okay why this bash ?
+It saves you time and it can do anything you want to config a server for vpn .
+
+
+## ✏️ Introduction
+Hi, my names soroush. This idea once came to my mind why do we should copy the same codes agian and agian to make vpn server , proxy server or anything else do bypass NIN in iran! 
+so i made this script and i hope you enjoy it.😉
+
+
+
+## 🧐 Features
+- ** Update and Upgrde server**
+- **GET ssl for server **
+
+- **install several xray panels like x-ui 3x-ui hiddify and ...**
+
+- **Config server for cisco openconnect (use another script)**
+
+- **Config server for openvpn (use another script)**
+
+- **Make a tunnel using iptalbes**
+
+- **Change ssh port**
+
+- **Config server for mtproto proxy**
+
+- **install and config wordpress**
+
+- ** **
+
+- ** **
+
+- ** **
+
+- ** **
+
+- ** **
+## Requirement
+you just need an ubuntu 20.02 on a vps. easy !!
+
+
+## 🛠️ Installation Steps
+
+1.
+first you should download the script using code below
+
+```bash
+instalation code
+```
+then you should make the file runable by using code below
+
+```bash
+chmod +x Astro.sh
+```
+then you should run the bash with one of the codes below
+
+```bash 
+./Astro.sh
+```
+or
+
+```bash 
+bash Astro.sh
+```
+if you have any error running the file just run the code below 
+```bash 
+sed -i -e 's/\r$//' Astro.sh
+./Astro.sh
 
 
 
 <p align="left"> <a href="https://twitter.com/soroush_nk80" target="blank"><img src="https://img.shields.io/twitter/follow/soroush_nk80?logo=twitter&style=for-the-badge" alt="soroush_nk80" /></a> </p>
+
 
 - 🔭 I’m currently working on [Astro](https://github.com/Soroushnk/Astro)
 
