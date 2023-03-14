@@ -1,4 +1,4 @@
-<h1 align="center"> 🚀Astro</h1>
+<h1 align="center"> 🚀 Astro 🚀 </h1>
 <h3 align="center">A bash script that helps bypass GFW</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=soroushnk&label=Profile%20views&color=0e75b6&style=flat" alt="soroushnk" /> </p>
