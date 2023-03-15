@@ -76,7 +76,7 @@ if you have any error running the file just run the code below
 sed -i -e 's/\r$//' Astro.sh
 ./Astro.sh
 ```
-🌟 You are all set. enjoy
+🌟 You are all set. enjoy !!
 
 ## 🙏 Support
 <p align="left"> <a href="https://twitter.com/soroush_nk80" target="blank"><img src="https://img.shields.io/twitter/follow/soroush_nk80?logo=twitter&style=for-the-badge" alt="soroush_nk80" /></a> </p>
