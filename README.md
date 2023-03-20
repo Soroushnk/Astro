@@ -19,6 +19,7 @@ so i made this script and i hope you enjoy it.😉
 
 ## 🧐 Features
 - ** Update and Upgrde server**
+
 - **GET ssl for server **
 
 - **install several xray panels like x-ui 3x-ui hiddify and ...**
@@ -35,9 +36,9 @@ so i made this script and i hope you enjoy it.😉
 
 - **install and config wordpress**
 
-- ** **
+- **Speedtest**
 
-- ** **
+- **Cloudflare white IP scanner**
 
 - ** **
 
