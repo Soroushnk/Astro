@@ -40,9 +40,9 @@ so i made this script and i hope you enjoy it.😉
 
 - **Cloudflare white IP scanner**
 
-- ** **
+- **run reverse proxy using nginxs**
 
-- ** **
+- **config firewall server**
 
 - ** **
 ## Requirement
