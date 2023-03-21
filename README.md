@@ -12,8 +12,7 @@ It saves you time and it can do anything you want to config a server for vpn .
 
 
 ## ✏️ Introduction
-Hi, I'm Soroush and i'm a network studier . This idea once came to my mind why do we should copy the same codes agian and agian to make vpn server , proxy server or anything else do bypass NIN in iran! 
-so i made this script and i hope you enjoy it.😉
+Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do we should copy the same codes again and again to make a VPN server, a proxy server, or anything else to bypass NIN in Iran! so I made this script and I hope you enjoy it.😉
 
 
 
