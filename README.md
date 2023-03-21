@@ -8,7 +8,7 @@
  
  
 ### okay why this bash ?
-It saves you time and it can do anything you want to config a server for vpn .
+It saves you time and it can do anything you want to config a server for VPN.
 
 
 ## ✏️ Introduction
@@ -39,19 +39,19 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 
 - **Cloudflare white IP scanner**
 
-- **run reverse proxy using nginxs**
+- **Run reverse proxy using nginxs**
 
-- **config firewall server**
+- **Config firewall server**
 
 - ** **
 ## Requirement
-you just need an ubuntu 20.02 on a vps. easy !!
+You just need an ubuntu 20.02 on a VPS. easy !!
 
 
 ## 🛠️ Installation Steps
 
 1.
-first you should download the script using code below
+First you should download the script using code below
 
 ```bash
 instalation code
@@ -71,7 +71,7 @@ or
 ```bash 
 bash Astro.sh
 ```
-if you have any error running the file just run the code below 
+If you have any error running the file just run the code below 
 ```bash 
 sed -i -e 's/\r$//' Astro.sh
 ./Astro.sh
