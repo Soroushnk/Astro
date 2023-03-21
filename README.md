@@ -81,6 +81,9 @@ sed -i -e 's/\r$//' Astro.sh
 ## 🙏 Support
 <p align="left"> <a href="https://twitter.com/soroush_nk80" target="blank"><img src="https://img.shields.io/twitter/follow/soroush_nk80?logo=twitter&style=for-the-badge" alt="soroush_nk80" /></a> </p>
  
+<h3 align="left">Support:</h3>
+<p><a href="https://www.buymeacoffee.com/snekoozadeh"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="snekoozadeh" /></a></p><br><br>
+
 Or with crypto
 ```shell
 Ether (Aurora Mainnet): 0x997DC6f235797221f5CB1c89127a619277d85d09 
@@ -109,7 +112,6 @@ Tether (POS - wormhole) : Bi5GizsJtvrc4mLcBruAQan78Lq4PC4XAjEAwLPMPz64
 <h3 align="left">Languages and Tools used:</h3>
 <p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> </p>
 
-<h3 align="left">Support:</h3>
-<p><a href="https://www.buymeacoffee.com/snekoozadeh"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="snekoozadeh" /></a></p><br><br>
+
 
 
