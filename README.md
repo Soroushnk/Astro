@@ -46,6 +46,7 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 - ** **
 ## Requirement
 You just need an ubuntu 20.02 on a VPS. easy !!
+you can test it on other OS's like debian. 
 
 
 ## 🛠️ Installation Steps
