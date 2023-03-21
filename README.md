@@ -81,7 +81,7 @@ sed -i -e 's/\r$//' Astro.sh
 ## 🙏 Support
 <p align="left"> <a href="https://twitter.com/soroush_nk80" target="blank"><img src="https://img.shields.io/twitter/follow/soroush_nk80?logo=twitter&style=for-the-badge" alt="soroush_nk80" /></a> </p>
  
-<h3 align="left">Support:</h3>
+<h3 align="left">Support by creditcard :</h3>
 <p><a href="https://www.buymeacoffee.com/snekoozadeh"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="snekoozadeh" /></a></p><br><br>
 
 Or with crypto
