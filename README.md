@@ -81,6 +81,17 @@ sed -i -e 's/\r$//' Astro.sh
 
 ## 🙏 Support
 <p align="left"> <a href="https://twitter.com/soroush_nk80" target="blank"><img src="https://img.shields.io/twitter/follow/soroush_nk80?logo=twitter&style=for-the-badge" alt="soroush_nk80" /></a> </p>
+ 
+Or with crypto
+```shell
+Ether (Aurora Mainnet): 0x997DC6f235797221f5CB1c89127a619277d85d09 
+```
+```shell
+Ethereum (Mainnet) : 0x997DC6f235797221f5CB1c89127a619277d85d09
+```
+```shell
+Tether (POS - wormhole) : Bi5GizsJtvrc4mLcBruAQan78Lq4PC4XAjEAwLPMPz64
+```
 
 
 - 🔭 I’m currently working on [Astro](https://github.com/Soroushnk/Astro)
