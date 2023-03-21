@@ -2,7 +2,7 @@
 <h3 align="center"> 🎗️A bash script that helps bypass GFW 🎗️</h3>
 
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=soroushnk&label=Profile%20views&color=0e75b6&style=flat" alt="soroushnk" />
-<img src="https://img.shields.io/github/license/soroushnk/Astro?style=flat-square" alt="github-profile-readme-generator license" /> </p>
+<img src="https://img.shields.io/github/license/soroushnk/Astro?style=flat-square" alt="https://github.com/Soroushnk/Astro/blob/main/LICENSE" /> </p>
 
  ### By Soroush Nekoozadeh
  
