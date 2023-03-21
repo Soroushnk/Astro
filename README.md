@@ -84,7 +84,7 @@ sed -i -e 's/\r$//' Astro.sh
 <h3 align="left">Support by creditcard :</h3>
 <p><a href="https://www.buymeacoffee.com/snekoozadeh"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="snekoozadeh" /></a></p><br><br>
 
-<h3 align="left">Or with Crypto :</h3>
+<h3 align="left">Or with Crypto :</h3></p>
 ```shell
 Ether (Aurora Mainnet): 0x997DC6f235797221f5CB1c89127a619277d85d09 
 ```
