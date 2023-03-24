@@ -4,13 +4,13 @@
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=soroushnk&label=Profile%20views&color=0e75b6&style=flat" alt="soroushnk" />
 <img src="https://img.shields.io/github/license/soroushnk/Astro?style=flat-square" alt="https://github.com/Soroushnk/Astro/blob/main/LICENSE" /> </p>
 <p align="center">
-  <img src="./asset/smenu.png" width="600" />
+  <img src="./assets/smenu.png" width="350" />
 </p>
 
  ### By Soroush Nekoozadeh
  
  
-### okay why this bash ?
+### Why this bash ?
 It saves you time and it can do anything you want to config a server for VPN.
 
 
@@ -20,9 +20,9 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 
 
 ## 🧐 Features
-- ** Update and Upgrde server**
+- **Update and Upgrde server**
 
-- **GET ssl for server **
+- **GET ssl for server**
 
 - **install several xray panels like x-ui 3x-ui hiddify and ...**
 
@@ -46,7 +46,7 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 
 - **Config firewall server**
 
-- ** **
+- **Config Wiregaurd**
 ## Requirement
 You just need an ubuntu 20.02 on a VPS. easy !!
 you can test it on other OS's like debian. 
