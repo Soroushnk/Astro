@@ -59,7 +59,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 ```
 Or:
 
-1.
+
 First you should download the script usingone of the codes  below :
 
 a -
