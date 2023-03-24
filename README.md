@@ -60,11 +60,16 @@ bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 Or:
 
 1.
-First you should download the script using code below
-
+First you should download the script usingone of the codes  below :
+a -
 ```bash
 wget https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh
 
+```
+b -(this will download the hole repository) 
+```bash
+git clone https://github.com/Soroushnk/Astro.git
+cd Astro
 ```
 then you should make the file runable by using code below
 
