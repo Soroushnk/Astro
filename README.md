@@ -57,11 +57,13 @@ You can simply run code bu using code below
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 ```
+Or:
+
 1.
 First you should download the script using code below
 
 ```bash
-instalation code
+
 ```
 then you should make the file runable by using code below
 
