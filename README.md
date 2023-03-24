@@ -53,7 +53,10 @@ you can test it on other OS's like debian.
 
 
 ## 🛠️ Installation Steps
-
+You can simply run code bu using code below 
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
+```
 1.
 First you should download the script using code below
 
