@@ -63,6 +63,7 @@ Or:
 First you should download the script using code below
 
 ```bash
+wget https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh
 
 ```
 then you should make the file runable by using code below
