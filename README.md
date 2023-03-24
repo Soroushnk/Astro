@@ -107,7 +107,7 @@ Tether (POS - wormhole) : Bi5GizsJtvrc4mLcBruAQan78Lq4PC4XAjEAwLPMPz64
 
 - 👯 I’m looking to collaborate on **GFWresearch**
 
-- 📫 How to reach me **soroush.nk80@gmail.com**
+- 📫 How to reach me : **soroush.nk80@gmail.com**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
