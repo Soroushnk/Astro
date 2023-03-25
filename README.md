@@ -64,7 +64,7 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 ## Requirement
 You just need an ubuntu 20.02 on a VPS. easy !!
 
-you can test it on other OS's like debian. 
+You can test it on other OS's like debian. 
 
 
 ## 🛠️ Installation Steps
@@ -78,29 +78,29 @@ bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 
   1. First you should download the script usingone of the codes  below :
 
-    a.
+   a.
 ```bash
 wget https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh
 
 ```
-    b.
+   b.
 
-(this will download the hole repository) 
+(This will download the hole repository) 
 ```bash
 git clone https://github.com/Soroushnk/Astro.git
 cd Astro
 ```
-  2. then you should make the file runable by using code below
+  2. Then you should make the file runable by using code below
 
 ```bash
 chmod +x Astro.sh
 ```
-  3. then you should run the bash with one of the codes below
+  3. After that you should run the bash with one of the codes below
 
 ```bash 
 ./Astro.sh
 ```
-   b. or : 
+   b. Or: 
 
 ```bash 
 bash Astro.sh
