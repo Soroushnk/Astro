@@ -12,12 +12,11 @@
 ## Table of Contents
 
 
-1. [Introduction](#-introduction)
-2. [Installation](#-installation)
-3. [Usage](#-usage)
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Installation Steps](#installation-steps)
 4. [Support](#-support)
-5. [Contributing](#-contributing)
-6. [License](#-license)
+
 
 #
 [اگر فارسی زبان هستید](https://github.com/Soroushnk/Astro/blob/main/readme-fa.md)
