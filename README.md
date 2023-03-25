@@ -9,13 +9,14 @@
 
  ### By Soroush Nekoozadeh
 
- ## Table of Contents
+## Table of Contents
 
-1. [Introduction](#Whythisbash)
-2. [Installation](#🧐Features)
+1. [Introduction](#introduction)
+2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Contributing](#contributing)
-5. [License](#license)
+4. [Support](#support)
+5. [Contributing](#contributing)
+6. [License](#license)
 
 #
 [اگر فارسی زبان هستید](https://github.com/Soroushnk/Astro/blob/main/readme-fa.md)
