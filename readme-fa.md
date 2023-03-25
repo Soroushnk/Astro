@@ -14,7 +14,7 @@
 به راحتی هر چیزی که برای ساخت یک وی پی ان نیاز داشته باشی رو میتونی با چند تا کلیک انجام بدی. 
 
 
-## ✏️ Introduction
+## ✏️ معرفی
 سلام . حتما تجربه داشتی که برای انجام کوچیک ترین کاری که توی سرور بخوای انجام بدی کلی باید کد کپی کنی کلی تغییر بدی اونم با putty  که عذابه 😒. پس به این فکر افتادم که که همون اون کارهارو بندازم گردن یه اسکریپت که خودکار اونهارو انجام بده.
 
 
@@ -59,50 +59,51 @@
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 ```
-Or:
+یا اینکه :
 
 
-First you should download the script usingone of the codes  below :
+شما اول کد رو روی سرور خودتون دانلود یا اجرا کنین که دوتا روش داره :
 
-a -
+الف)
 ```bash
 wget https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh
 
 ```
-b -(this will download the hole repository) 
+
+ب) این کد کل پروژه رو دانلود میکنه:
 ```bash
 git clone https://github.com/Soroushnk/Astro.git
 cd Astro
 ```
-then you should make the file runable by using code below
+حالا باید با کد زیر فایل رو قابل اجرا کنین:
 
 ```bash
 chmod +x Astro.sh
 ```
-then you should run the bash with one of the codes below
+بعد با یکی از کد های زیر  توسط bash  کد رو اجرا کنین :
 
 ```bash 
 ./Astro.sh
 ```
-or
+یا 
 
 ```bash 
 bash Astro.sh
 ```
-If you have any error running the file just run the code below 
+اگه هر مشکلی توی اجرای اسکریپت داشتین کد زیر رو اجرا کنین :
 ```bash 
 sed -i -e 's/\r$//' Astro.sh
 ./Astro.sh
 ```
-🌟 You are all set. enjoy !!
+🌟 خوب دیگه کار تمومه  !!
 
-## 🙏 Support
+## 🙏 حمایت 
 <p align="left"> <a href="https://twitter.com/soroush_nk80" target="blank"><img src="https://img.shields.io/twitter/follow/soroush_nk80?logo=twitter&style=for-the-badge" alt="soroush_nk80" /></a> </p>
  
-<h3 align="left">Support by creditcard :</h3>
+<h3 align="right">اگه کردیت کارت دارین </h3>
 <p><a href="https://www.buymeacoffee.com/snekoozadeh"> <img align="left" src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" height="50" width="210" alt="snekoozadeh" /></a></p><br><br>
 
-<h3 align="left">Or with Crypto :</h3>
+<h3 align="right">یا با رمز ارز :</h3>
 
 ```shell
 Ether (Aurora Mainnet): 0x997DC6f235797221f5CB1c89127a619277d85d09 
@@ -115,21 +116,20 @@ Tether (POS - wormhole) : Bi5GizsJtvrc4mLcBruAQan78Lq4PC4XAjEAwLPMPz64
 ```
 
 
-- 🔭 I’m currently working on [Astro](https://github.com/Soroushnk/Astro)
+- 🔭 فعلا دارم روی این پروژه کار میکنم [Astro](https://github.com/Soroushnk/Astro)
 
-- 🌱 I’m currently learning **networking**
+- 🌱 گراایشی که به طور حرفه ای دنبال میکنم **networking**
 
-- 👯 I’m looking to collaborate on **GFWresearch**
 
-- 📫 How to reach me : **soroush.nk80@gmail.com**
+- 📫 چطور با من در ارتباط باشین : **توییتر**
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
+<h3 align="right">اگر سوالی داشتین:</h3>
+<p align="right">
 <a href="https://twitter.com/soroush_nk80" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="soroush_nk80" height="30" width="40" /></a>
 </p>
 
-<h3 align="left">Languages and Tools used:</h3>
-<p align="left"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> </p>
+<h3 align="right">زبان های استفاده شده :</h3>
+<p align="right"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> </p>
 
 
 
