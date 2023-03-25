@@ -6,6 +6,10 @@
 <p align="center">
   <img src="./assets/smenu.png" width="350" />
 </p>
+<div dir="rtl">
+
+
+
 
  ### نوشته شده توسط سروش نکوزاده
  
@@ -134,3 +138,4 @@ Tether (POS - wormhole) : Bi5GizsJtvrc4mLcBruAQan78Lq4PC4XAjEAwLPMPz64
 
 
 
+</div>
