@@ -9,9 +9,8 @@
 
 <div dir="rtl">
 
-This text will be displayed right-to-left.
 
-</div>
+
 
 
 
@@ -138,4 +137,4 @@ Tether (POS - wormhole) : Bi5GizsJtvrc4mLcBruAQan78Lq4PC4XAjEAwLPMPz64
 
 <h3 align="right">زبان های استفاده شده :</h3>
 <p align="right"> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> </p>
-
+</div>
