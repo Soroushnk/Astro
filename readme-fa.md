@@ -7,7 +7,11 @@
   <img src="./assets/smenu.png" width="350" />
 </p>
 
+<div dir="rtl">
 
+This text will be displayed right-to-left.
+
+</div>
 
 
 
