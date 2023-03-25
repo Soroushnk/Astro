@@ -9,7 +9,12 @@
 
  ### By Soroush Nekoozadeh
  
+#
+[اگر فارسی زبان هستید](https://github.com/Soroushnk/Astro/blob/main/readme-fa.md)
+
+#
  
+
 ### Why this bash ?
 It saves you time and it can do anything you want to config a server for VPN.
 
