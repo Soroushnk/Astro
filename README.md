@@ -73,7 +73,7 @@ You can test it on other OS's like debian.
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 ```
-2. Or :
+ Or :
 
 
 1. First you should download the script usingone of the codes  below :
