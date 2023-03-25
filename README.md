@@ -63,45 +63,49 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 - **Config Wiregaurd**
 ## Requirement
 You just need an ubuntu 20.02 on a VPS. easy !!
+
 you can test it on other OS's like debian. 
 
 
 ## 🛠️ Installation Steps
-You can simply run code bu using code below 
+1. You can simply run code bu using code below 
+
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 ```
-Or:
+2. Or :
 
 
-First you should download the script usingone of the codes  below :
+  1. First you should download the script usingone of the codes  below :
 
-a -
+    a.
 ```bash
 wget https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh
 
 ```
-b -(this will download the hole repository) 
+    b.
+
+(this will download the hole repository) 
 ```bash
 git clone https://github.com/Soroushnk/Astro.git
 cd Astro
 ```
-then you should make the file runable by using code below
+  2. then you should make the file runable by using code below
 
 ```bash
 chmod +x Astro.sh
 ```
-then you should run the bash with one of the codes below
+  3. then you should run the bash with one of the codes below
 
 ```bash 
 ./Astro.sh
 ```
-or
+   b. or : 
 
 ```bash 
 bash Astro.sh
 ```
-If you have any error running the file just run the code below 
+  4. If you have any error running the file just run the code below 
 ```bash 
 sed -i -e 's/\r$//' Astro.sh
 ./Astro.sh
