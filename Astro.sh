@@ -43,7 +43,7 @@ while true; do
     echo -e "${YELLOW} 1.${NC} ${CYAN}Update server and install dependences${NC}"
     echo -e "${YELLOW} 2.${NC} ${GRAY}Install curl/socat${NC}"
     echo -e "${YELLOW} 3.${NC} ${GRAY}Install panel${NC}"
-    echo -e "${YELLOW} 4.${NC} ${CYAN}Install config ssl ${NC}"
+    echo -e "${YELLOW} 4.${NC} ${CYAN}Install and config ssl ${NC}"
     echo -e "${YELLOW} 5.${NC} ${CYAN}Cisco anyconnect${NC}"
     echo -e "${YELLOW} 6.${NC} ${GRAY}Change SSH port${NC}"
     echo -e "${YELLOW} 7.${NC} ${GRAY}Google Recapcha Fix${NC}"
