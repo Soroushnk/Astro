@@ -10,6 +10,7 @@
  ### By Soroush Nekoozadeh
 
 ## Table of Contents
+4. [Support](#-support)
 
 1. [Introduction](#introduction)
 2. [Installation](#installation)
