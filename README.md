@@ -76,7 +76,7 @@ bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 2. Or :
 
 
- 1. First you should download the script usingone of the codes  below :
+1. First you should download the script usingone of the codes  below :
 
    a.
 ```bash
