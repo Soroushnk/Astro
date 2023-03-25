@@ -8,7 +8,15 @@
 </p>
 
  ### By Soroush Nekoozadeh
- 
+
+ ## Table of Contents
+
+1. [Introduction](#Whythisbash)
+2. [Installation](#🧐Features)
+3. [Usage](#usage)
+4. [Contributing](#contributing)
+5. [License](#license)
+
 #
 [اگر فارسی زبان هستید](https://github.com/Soroushnk/Astro/blob/main/readme-fa.md)
 
