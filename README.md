@@ -10,14 +10,14 @@
  ### By Soroush Nekoozadeh
 
 ## Table of Contents
-4. [Support](#-support)
 
-1. [Introduction](#introduction)
-2. [Installation](#installation)
-3. [Usage](#usage)
-4. [Support](#support)
-5. [Contributing](#contributing)
-6. [License](#license)
+
+1. [Introduction](#-introduction)
+2. [Installation](#-installation)
+3. [Usage](#-usage)
+4. [Support](#-support)
+5. [Contributing](#-contributing)
+6. [License](#-license)
 
 #
 [اگر فارسی زبان هستید](https://github.com/Soroushnk/Astro/blob/main/readme-fa.md)
