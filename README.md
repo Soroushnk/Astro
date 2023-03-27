@@ -68,7 +68,7 @@ You can test it on other OS's like debian.
 
 
 ## 🛠️ Installation Steps
-1. You can simply run code bu using code below 
+1. You can simply run code by using code below 
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
