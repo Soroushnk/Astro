@@ -68,48 +68,50 @@ You can test it on other OS's like debian.
 
 
 ## 🛠️ Installation Steps
+
 1. You can simply run code by using code below 
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 ```
- Or :
-
+Or :
 
 1. First you should download the script usingone of the codes  below :
 
-   a.
+a.
 ```bash
 wget https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh
 
 ```
-   b.
+ b.
 
 (This will download the hole repository) 
 ```bash
 git clone https://github.com/Soroushnk/Astro.git
 cd Astro
 ```
-  2. Then you should make the file runable by using code below
+2. Then you should make the file runable by using code below
 
 ```bash
 chmod +x Astro.sh
 ```
-  3. After that you should run the bash with one of the codes below
+3. After that you should run the bash with one of the codes below
 
 ```bash 
 ./Astro.sh
 ```
-   b. Or: 
+b. Or: 
 
 ```bash 
 bash Astro.sh
 ```
-  4. If you have any error running the file just run the code below 
+4. If you have any error running the file just run the code below
+ 
 ```bash 
 sed -i -e 's/\r$//' Astro.sh
 ./Astro.sh
 ```
+
 🌟 You are all set. enjoy !!
 
 ## 🙏 Support
