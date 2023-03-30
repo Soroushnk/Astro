@@ -100,7 +100,7 @@ chmod +x Astro.sh
 ```bash 
 ./Astro.sh
 ```
-b. Or: 
+Or: 
 
 ```bash 
 bash Astro.sh
