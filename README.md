@@ -62,7 +62,7 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 
 - **Config Wiregaurd**
 ## Requirement
-You just need at least ubuntu 20.04 on a VPS. easy !!
+You just need at least ubuntu 20.04 ()on a VPS. easy !! (It runs on previous versions of ubuntu as well. But his is a preliminary version)
 
 You can test it on other OS's like debian. 
 
