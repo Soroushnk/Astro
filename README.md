@@ -61,6 +61,14 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 - **Config firewall server**
 
 - **Config Wiregaurd**
+
+- **Config Outline**
+
+- **Server Backup**
+
+- **View system usage**
+
+- **Set up IPsec VPN**
 ## Requirement
 You just need at least ubuntu 20.04 ()on a VPS. easy !! (It runs on previous versions of ubuntu as well. But his is a preliminary version)
 
