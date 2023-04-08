@@ -9,12 +9,12 @@ CYAN='\033[0;36m'
 GRAY='\033[0;37m'
 NC='\033[0m' # No Color
 # Check if user is root
-if [[ $EUID -ne 0 ]]; then
-   echo "This script must be run as root"
-   sleep .5 
-   sudo "$0" "$@"
-   exit 1
-fi
+#if [[ $EUID -ne 0 ]]; then
+#   echo "This script must be run as root"
+#   sleep .5 
+#   sudo "$0" "$@"
+#   exit 1
+#fi
 
 
 echo "Running as root..."
@@ -23,41 +23,46 @@ clear
 
 while true; do
     clear
-    echo -e "${YELLOW}####################################################${NC}"
-    echo -e "${GREEN}#                                                  #${NC}"
-    echo -e "${BLUE}#${GREEN}           ______       _____                     ${BLUE}#${NC}"
-    echo -e "${BLUE}#${GREEN}          ___    |________  /_____________        ${BLUE}#${NC}"
-    echo -e "${BLUE}#${GREEN}          __  /| |_  ___/  __/_  ___/  __ \       ${BLUE}#${NC}"
-    echo -e "${BLUE}#${GREEN}          _  ___ |(__  )/ / _ _  /  / /_/ /       ${BLUE}#${NC}"
-    echo -e "${BLUE}#${GREEN}          /_/  |_/____/ \__/  /_/   \____/        ${BLUE}#${NC}"
-    echo -e "${BLUE}#                                                  #${NC}"
-    echo -e "${BLUE}#${NC}                         B Y                      ${BLUE}#${NC}"
-    echo -e "${BLUE}#${NC}                 A T O M I C B O Y S              ${BLUE}#${NC}"
-    echo -e "${BLUE}#                                                  #${NC}"
-    echo -e "${BLUE}#                      ${GREEN}Main Menu${BLUE}                   #${NC}"
-    echo -e "${GREEN}#                                                  #${NC}" 
-    echo -e "${YELLOW}####################################################${NC}"
-    echo -e "\n"
+    echo -e "${YELLOW}+--------------------------------------------------+${NC}"
+    echo -e "${YELLOW}|                                                  |${NC}"
+    echo -e "${GREEN}|${GREEN}          ______       _____                      ${GREEN}|${NC}"
+    echo -e "${BLUE}|${GREEN}         ___    |________  /_____________         ${BLUE}|${NC}"
+    echo -e "${BLUE}|${GREEN}         __  /| |_  ___/  __/_  ___/  __ \        ${BLUE}|${NC}"
+    echo -e "${BLUE}|${GREEN}         _  ___ |(__  )/ / _ _  /  / /_/ /        ${BLUE}|${NC}"
+    echo -e "${BLUE}|${GREEN}         /_/  |_/____/ \__/  /_/   \____/         ${BLUE}|${NC}"
+    echo -e "${BLUE}|                                         ver 1.1  |${NC}"
+    echo -e "${BLUE}|${NC}                        B Y                       ${BLUE}|${NC}"
+    echo -e "${BLUE}|${NC}                A T O M I C B O Y S               ${BLUE}|${NC}"
+    echo -e "${BLUE}|            ---------------------------           |${NC}"
+    echo -e "${BLUE}|                      ${GREEN}Main Menu${BLUE}                   |${NC}"
+    echo -e "${GREEN}|     ---------------------------------------      |${NC}"
+    echo -e "${BLUE}|${YELLOW} 1.${NC} ${CYAN}Update server and install dependences${NC}         ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW} 2.${NC} ${GRAY}Install curl/socat${NC}                            ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW} 3.${NC} ${GRAY}Install panel${NC}                                 ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW} 4.${NC} ${CYAN}Install and config ssl ${NC}                       ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW} 5.${NC} ${CYAN}Cisco anyconnect${NC}                              ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW} 6.${NC} ${GRAY}Change SSH port${NC}                               ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW} 7.${NC} ${GRAY}Google Recapcha Fix${NC}                           ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW} 8.${NC} ${CYAN}Install Mtproto proxy${NC}                         ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW} 9.${NC} ${CYAN}Add user (for SSH)${NC}                            ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}10.${NC} ${GRAY}Install OpenVPN${NC}                               ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}11.${NC} ${GRAY}Install and config WordPress${NC}                  ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}12.${NC} ${CYAN}Speedtest${NC}                                     ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}13.${NC} ${CYAN}Tunnel two server using IPtables${NC}              ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}14.${NC} ${GRAY}Cloudflare white IP scanner${NC}                   ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}15.${NC} ${GRAY}Reverse proxy(UNDER development)${NC}              ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}16.${NC} ${CYAN}Set up wiregaurd${NC}                              ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}17.${NC} ${CYAN}Set up Outline${NC}                                ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}18.${NC} ${GRAY}Server Backup${NC}                                 ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}19.${NC} ${GRAY}View system usage${NC}                             ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}20.${NC} ${CYAN}Set up IPsec VPN(L2TP/IKEV2)${NC}                  ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}21.${NC} ${GREEN}CREDITS${NC}                                       ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}22.${NC} ${RED}QUIT${NC}                                          ${BLUE}|${NC}"
+    echo -e "${GREEN}|                                                  |${NC}" 
+    echo -e "${YELLOW}|                                                  |${NC}" 
+    echo -e "${YELLOW}+--------------------------------------------------+${NC}"
+    echo -e ""
     echo -e "${GREEN}Please choose an option:${NC}"
-    echo ""
-    echo -e "${YELLOW} 1.${NC} ${CYAN}Update server and install dependences${NC}"
-    echo -e "${YELLOW} 2.${NC} ${GRAY}Install curl/socat${NC}"
-    echo -e "${YELLOW} 3.${NC} ${GRAY}Install panel${NC}"
-    echo -e "${YELLOW} 4.${NC} ${CYAN}Install and config ssl ${NC}"
-    echo -e "${YELLOW} 5.${NC} ${CYAN}Cisco anyconnect${NC}"
-    echo -e "${YELLOW} 6.${NC} ${GRAY}Change SSH port${NC}"
-    echo -e "${YELLOW} 7.${NC} ${GRAY}Google Recapcha Fix${NC}"
-    echo -e "${YELLOW} 8.${NC} ${CYAN}Install Mtproto proxy${NC}"
-    echo -e "${YELLOW} 9.${NC} ${CYAN}Add user (for SSH)${NC}"
-    echo -e "${YELLOW}10.${NC} ${GRAY}Install OpenVPN${NC}"
-    echo -e "${YELLOW}11.${NC} ${CYAN}Install and config WordPress${NC}"
-    echo -e "${YELLOW}12.${NC} ${GRAY}Speedtest${NC}"
-    echo -e "${YELLOW}13.${NC} ${CYAN}Tunnel two server using IPtables${NC}"
-    echo -e "${YELLOW}14.${NC} ${GRAY}Cloudflare white IP scanner${NC}"
-    echo -e "${YELLOW}15.${NC} ${CYAN}reverse proxy(UNDER development)${NC}"
-    echo -e "${YELLOW}16.${NC} ${GRAY}set up wiregaurd${NC}"
-    echo -e "${YELLOW}17.${NC} ${GREEN}CREDITS${NC}"
-    echo -e "${YELLOW}18.${NC} ${RED}QUIT${NC}"
     echo -e ""
     read -p "Enter option number: " choice
 
@@ -483,7 +488,7 @@ while true; do
                   echo "VPS Speed Test Menu"
                   echo "===================="
                   echo "1. Install speedtest-cli"
-                  echo "1. complete test"
+                  echo "2. complete test"
                   echo "3. complete test"
                   echo "4. Test Download Speed"
                   echo "5. Test Upload Speed"
@@ -877,7 +882,7 @@ while true; do
         #Wiregaurd    
         16)
             
-
+            
             while true
             do
                 clear
@@ -890,6 +895,7 @@ while true; do
             
                 case $choice in
                     1)
+                        
                         while true
                         do
                             clear
@@ -1058,6 +1064,7 @@ while true; do
                         TCP_PORT=${TCP_PORT:-51821}
                         
                         # Run docker command with specified parameters
+                 
                         docker run -d \
                           --name=wg-easy \
                           -e WG_HOST=$WG_HOST \
@@ -1092,9 +1099,157 @@ while true; do
                 esac
             done
 
-           ;;   
-        # CREDITS   
+           ;;
+           
+           
+           
+        #outline  
         17)
+            echo " installnig the outline .... "
+            bash -c "$(wget -qO- https://raw.githubusercontent.com/Jigsaw-Code/outline-server/master/src/server_manager/install_scripts/install_server.sh)"
+            echo " copy your installation output from above and paste in outline manager."
+            echo -e "Press ${RED}ENTER${NC} to continue"
+            read -s -n 1
+           ;;
+           
+           
+        18)
+               while true; do
+               clear
+               echo "Menu:"
+               echo "1. Install rsnapshot"
+               echo "2. Configure rsnapshot"
+               echo "3. Take snapshot"
+               echo "4. Exit"
+               read -p "Enter your choice: " choice
+           
+               case $choice in
+                   1) 
+                       echo "Installing rsnapshot..."
+                       apt-get update
+                       apt-get install -y rsnapshot
+                       echo "Rsnapshot installed successfully."
+                       read -p "Press Enter to continue."
+                       ;;
+                   2) 
+                       echo "Configuring rsnapshot..."
+                       # Backup source directories
+                       echo "backup  /etc/  localhost/" >> /etc/rsnapshot.conf
+                       echo "backup  /home/ localhost/" >> /etc/rsnapshot.conf
+                       echo "backup  /var/log/  localhost/" >> /etc/rsnapshot.conf
+                   
+                       # Backup destination directory
+                       echo "snapshot_root /backups/" >> /etc/rsnapshot.conf
+                   
+                       # Backup intervals
+                       echo "interval hourly 6" >> /etc/rsnapshot.conf
+                       echo "interval daily 7" >> /etc/rsnapshot.conf
+                       echo "interval weekly 4" >> /etc/rsnapshot.conf
+                       echo "interval monthly 3" >> /etc/rsnapshot.conf
+                   
+                       echo "Rsnapshot configured successfully."
+                       read -p "Press Enter to continue."
+                       ;;
+                   3) 
+                       echo "Taking snapshot..."
+                       rsnapshot hourly
+                       echo "Snapshot taken successfully."
+                       read -p "Press Enter to continue."
+                       ;;
+                   4)
+                       echo "Exiting program."
+                       break
+                       ;;
+                   *) 
+                       echo "Invalid choice. Please try again."
+                       read -p "Press Enter to continue."
+                       ;;
+               esac
+           done
+           ;;
+          
+        19)
+            # Function to wait for user input and return to menu
+            function return_to_menu {
+                read -n1 -r -p "Press any key to return to the menu..."
+                clear
+            }
+            
+            # Print initial menu
+            while true; do
+                clear
+                echo "Please select an option:"
+                echo "1. View process table"
+                echo "2. Quit"
+                read -n1 -r option
+            
+                case $option in
+                    1)
+                        # Print table header with color
+                        printf "${YELLOW}%-20s %-10s %-10s %-10s${NC}\n" "Program Name" "CPU Usage" "RAM Usage" "Network Usage"
+            
+                        while true; do
+                            # Get process information with ps command
+                            ps_output=$(ps -e -o comm,%cpu,%mem --sort=-%cpu | head -n 6)
+            
+                            # Extract specific columns with awk command
+                            awk_output=$(echo "$ps_output" | awk '{printf "%-20s %-10s %-10s\n", $1, $2, $3}')
+            
+                            # Get network usage with sar command
+                            sar_output=$(sar -n DEV 1 1 | awk '/ens/ {printf "%-10s", $5}')
+            
+                            # Clear screen and print table header with color
+                            clear
+                            printf "${YELLOW}%-20s %-10s %-10s %-10s${NC}\n" "Program Name" "CPU Usage" "RAM Usage" "Network Usage"
+            
+                            # Print table with color
+                            printf "${GREEN}%s${NC} ${RED}%s${NC}\n" "$awk_output" "$sar_output"
+            
+                            # Wait for 5 seconds before next iteration
+                            sleep 1
+                        done
+                        ;;
+                    2)
+                        # Quit the script
+                        exit 0
+                        ;;
+                    *)
+                        # Handle invalid input
+                        echo "Invalid option selected. Please try again."
+                        return_to_menu
+                        ;;
+                esac
+            done
+           ;;
+        #IPsec
+        20)
+           # Prompt the user if they want to fill in the parameters
+           read -p "Do you want to fill in the parameters for vpn.sh? (y/n): " fill_params
+           
+           if [[ $fill_params == "y" || $fill_params == "Y" ]]; then
+               # Run the command to download the vpn.sh file
+               wget https://get.vpnsetup.net -O vpn.sh
+           
+               # Ask the user for the necessary parameters
+               read -p "Enter your IPSEC PSK: " ipsec_psk
+               read -p "Enter your username: " username
+               read -sp "Enter your password: " password
+           
+               # Fill in the necessary information in the vpn.sh file
+               sed -i "s/YOUR_IPSEC_PSK=''/YOUR_IPSEC_PSK='$ipsec_psk'/g" vpn.sh
+               sed -i "s/YOUR_USERNAME=''/YOUR_USERNAME='$username'/g" vpn.sh
+               sed -i "s/YOUR_PASSWORD=''/YOUR_PASSWORD='$password'/g" vpn.sh
+           
+               echo "Setup complete! Your vpn.sh file has been updated with your parameters."
+           fi
+           
+           # Run the command to execute the vpn.sh file
+           sudo sh vpn.sh
+
+           ;;
+     
+        # CREDITS   
+        21)
             echo ""
             echo -e "${BLUE}####################################################${NC}"
             echo -e "${BLUE}#${NC}                                      ${BLUE}#${NC}"
@@ -1113,7 +1268,7 @@ while true; do
             ;;
         
         # EXIT
-        18)
+        22)
             echo ""
             echo -e "${GREEN}Exiting...${NC}"
             echo "Exiting program"
