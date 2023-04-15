@@ -56,7 +56,7 @@ while true; do
     echo -e "${BLUE}|${YELLOW}18.${NC} ${GRAY}Server Backup${NC}                                 ${BLUE}|${NC}"
     echo -e "${BLUE}|${YELLOW}19.${NC} ${GRAY}View system usage${NC}                             ${BLUE}|${NC}"
     echo -e "${BLUE}|${YELLOW}20.${NC} ${CYAN}Set up IPsec VPN(L2TP/IKEV2)${NC}                  ${BLUE}|${NC}"
-    echo -e "${BLUE}|${YELLOW}21.${NC} ${CYAN}Reallity Protocol${NC}                             ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}21.${NC} ${CYAN}Reality Protocol${NC}                             ${BLUE}|${NC}"
     echo -e "${BLUE}|${YELLOW}22.${NC} ${GREEN}CREDITS${NC}                                       ${BLUE}|${NC}"
     echo -e "${BLUE}|${YELLOW}23.${NC} ${RED}QUIT${NC}                                          ${BLUE}|${NC}"
     echo -e "${GREEN}|                                                  |${NC}" 
