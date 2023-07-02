@@ -660,8 +660,8 @@ while true; do
                     read kharej_ip
             
                     sudo sysctl net.ipv4.ip_forward=1
-                    sudo iptables -t nat -A PREROUTING -p tcp --dport 22 -j DNAT --to-destination "$iran_ip"
-                    sudo iptables -t nat -A PREROUTING -j DNAT --to-destination "$kharej_ip"
+                    sudo iptables -t nat -A PREROUTING -p tcp -d "$iran_ip" --dport 22 -j DNAT --to-destination "$iran_ip"
+                    sudo iptables -t nat -A PREROUTING -j DNAT -d "$iran_ip" --to-destination "$kharej_ip"
                     sudo iptables -t nat -A POSTROUTING -j MASQUERADE
                     echo -e "Press ${RED}ENTER${NC} to continue"
                     read -s -n 1
