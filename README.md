@@ -47,6 +47,10 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 - **Make a tunnel using iptalbes**
 
 - **Change ssh port**
+  
+- **Change Repository**
+  
+- **Change nameservers**
 
 - **Config server for mtproto proxy**
 
@@ -65,6 +69,8 @@ Hi, I'm Soroush and I'm a network studier. This idea once came to my mind why do
 - **Config Outline**
 
 - **Server Backup**
+- 
+- **Sync two servers**
 
 - **View system usage**
 
