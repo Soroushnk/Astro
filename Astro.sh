@@ -90,7 +90,7 @@ while true; do
             echo -e "${GREEN}Updating server...${NC}" 
             echo ""
             apt update && apt upgrade -y
-            sudo apt install git wget curl ufw  wget socat 
+            sudo apt install git wget curl ufw  wget  
             echo ""
             echo -e "Press ${RED}ENTER${NC} to continue"
             read -s -n 1
@@ -920,6 +920,7 @@ while true; do
         # DOWNLOADS ACME
         12)
             echo -e "${GREEN}Installing Acme Script...${NC}"
+            apt install socat
             echo ""
             curl https://get.acme.sh | sh
             echo ""
