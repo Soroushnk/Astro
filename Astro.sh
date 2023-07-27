@@ -1316,7 +1316,7 @@ while true; do
             read -p "MTProto domain (should be a valid domain name): " mtproto_domain
             # Set default values if user input is empty
             port=${port:-443}
-            auth_methods=${auth_methods:-"dd,tls"}
+            auth_methods=${auth_methods:-"dd,-a tls"}
             # Download and run MTProto installation script
             curl -L -o mtp_install.sh https://git.io/fj5ru && \
             bash mtp_install.sh -p $port -s $secret_key -t $server_tag -a $auth_methods -d $mtproto_domain
