@@ -61,19 +61,20 @@ while true; do
     echo -e "${BLUE}|${YELLOW}17.${NC} ${GRAY}Set up wiregaurd${NC}                              ${BLUE}|${NC}"
     echo -e "${BLUE}|${YELLOW}18.${NC} ${CYAN}Set up IPsec VPN(L2TP/IKEV2)${NC}                  ${BLUE}|${NC}"
     echo -e "${BLUE}|${YELLOW}19.${NC} ${GRAY}Install Mtproto proxy${NC}                         ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}20.${NC} ${GRAY}SSH panel${NC}                         ${BLUE}|${NC}"
     echo -e "${BLUE}|                                                  |${NC}"
     echo -e "${GREEN}|    ------------  Side tools  -------------       |${NC}"
     echo -e "${BLUE}|                                                  |${NC}"
-    echo -e "${BLUE}|${YELLOW}20.${NC} ${CYAN}Google Recapcha Fix${NC}                           ${BLUE}|${NC}"
-    echo -e "${BLUE}|${YELLOW}21.${NC} ${GRAY}Cloudflare white IP scanner${NC}                   ${BLUE}|${NC}"
-    echo -e "${BLUE}|${YELLOW}22.${NC} ${CYAN}Speedtest${NC}                                     ${BLUE}|${NC}"
-    echo -e "${BLUE}|${YELLOW}23.${NC} ${GRAY}Install and config WordPress${NC}                  ${BLUE}|${NC}"
-    echo -e "${BLUE}|${YELLOW}24.${NC} ${CYAN}Reverse proxy(UNDER development)${NC}              ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}21.${NC} ${CYAN}Google Recapcha Fix${NC}                           ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}22.${NC} ${GRAY}Cloudflare white IP scanner${NC}                   ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}23.${NC} ${CYAN}Speedtest${NC}                                     ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}24.${NC} ${GRAY}Install and config WordPress${NC}                  ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}25.${NC} ${CYAN}Reverse proxy(UNDER development)${NC}              ${BLUE}|${NC}"
     echo -e "${BLUE}|                                                  |${NC}"
     echo -e "${GREEN}|    ----------------  other  --------------       |${NC}"
     echo -e "${BLUE}|                                                  |${NC}"
-    echo -e "${BLUE}|${YELLOW}25.${NC} ${GREEN}CREDITS${NC}                                       ${BLUE}|${NC}"
-    echo -e "${BLUE}|${YELLOW}26.${NC} ${RED}QUIT${NC}                                          ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}26.${NC} ${GREEN}CREDITS${NC}                                       ${BLUE}|${NC}"
+    echo -e "${BLUE}|${YELLOW}0.${NC} ${RED}QUIT${NC}                                          ${BLUE}|${NC}"
     echo -e "${GREEN}|                                                  |${NC}" 
     echo -e "${YELLOW}|                                                  |${NC}" 
     echo -e "${YELLOW}+--------------------------------------------------+${NC}"
@@ -1323,8 +1324,14 @@ while true; do
             echo -e "Press ${RED}ENTER${NC} to continue"
             read -s -n 1
             ;;
-        
-        20)  
+        20)
+             echo -e "wait until the instalation finish"
+             wget https://raw.githubusercontent.com/januda-ui/DRAGON-VPS-MANAGER/main/hehe; chmod 777 hehe;./hehe
+             echo -e "you can access the menu by typing (menu) in terminal"
+              echo -e "Press ${RED}ENTER${NC} to continue"
+              read -s -n 1
+            ;;
+        21)  
             echo -e "${GREEN}Fixing Google Recapcha...${NC}"
             echo ""
             curl -O https://raw.githubusercontent.com/jinwyp/one_click_script/master/install_kernel.sh && chmod +x ./install_kernel.sh && ./install_kernel.sh
@@ -1333,7 +1340,7 @@ while true; do
             read -s -n 1
             ;;
         #CFSscanner
-        21)
+        22)
              while true; do
                 clear
                  echo "---------------------"
@@ -1492,7 +1499,7 @@ while true; do
            ;;
         
         #Speedtest menu  
-        22) 
+        23) 
               while true; do
                 clear
                   echo ""
@@ -1638,7 +1645,7 @@ while true; do
             read -s -n 1
              ;;
         # Install WordPress and connect to SQL
-        23)
+        24)
             echo -e "${GREEN}Installing WordPress and connecting to SQL...${NC}"
             echo ""
             # Update package index and install required packages
@@ -1796,7 +1803,7 @@ while true; do
             read -s -n 1
             ;;
         #reverse proxy    
-        24)  
+        25)  
            apt install nginx certbot python3-certbot-nginx -y   
            read -p "Enter your site name: " site_name
            ln -s /etc/nginx/sites-available/$site_name /etc/nginx/sites-enabled/
@@ -1815,7 +1822,7 @@ while true; do
            echo -e "Press ${RED}ENTER${NC} to continue"
             read -s -n 1
             ;;
-        25)
+        26)
             clear
             echo ""
             echo -e "${BLUE}########################################${NC}"
@@ -1834,7 +1841,7 @@ while true; do
             read -s -n 1
             ;;
         # EXIT
-        26)
+        0)
             echo ""
             echo -e "${GREEN}Exiting...${NC}"
             echo "Exiting program"
