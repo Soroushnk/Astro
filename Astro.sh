@@ -263,7 +263,8 @@ while true; do
                         read -s -n 1
                         ;;
                 2)
-                        # Add code to display forwarding table
+                        # Add code to display forwarding table|
+                         iptables -L -n -t nat
                          ;;
                 3)
                         echo "Please enter the Iran IP for the tunnel:"
@@ -273,8 +274,8 @@ while true; do
                         echo "Please enter the SSH port (default is 22):"
                         read ssh_port
                         sudo sysctl net.ipv4.ip_forward=1
-                        sudo iptables -t nat -A PREROUTING -p tcp --dport $ssh_port -j DNAT --to-destination "$iran_ip"
-                        sudo iptables -t nat -A PREROUTING -j DNAT --to-destination "$kharej_ip"
+                        sudo iptables -t nat -A PREROUTING -p tcp -d "$iran_ip" --dport $ssh_port -j DNAT --to-destination "$iran_ip"
+                        sudo iptables -t nat -A PREROUTING -j DNAT -d "$iran_ip" --to-destination "$kharej_ip"
                         sudo iptables -t nat -A POSTROUTING -j MASQUERADE
                         echo "Do you want to add the commands to crontab for automatic execution on server reboot? (y/n)"
                         read add_to_crontab_choice
