@@ -1067,16 +1067,17 @@ while true; do
          #Wiregaurd    
         17)
 
-            RED='\033[0;31m'
-            GREEN='\033[0;32m'
-            YELLOW='\033[1;33m'
-            BLUE='\033[0;34m'
-            MAGENTA='\033[0;35m'
-            CYAN='\033[0;36m'
-            GRAY='\033[0;37m'
-            NC='\033[0m' # No Color
+             # No Color
             while true
             do
+                RED='\033[0;31m'
+                GREEN='\033[0;32m'
+                YELLOW='\033[1;33m'
+                BLUE='\033[0;34m'
+                MAGENTA='\033[0;35m'
+                CYAN='\033[0;36m'
+                GRAY='\033[0;37m'
+                NC='\033[0m'
                 clear
                 echo "==== Main Menu ===="
                 echo "${YELLOW}1.${NC} Install WireGuard"
@@ -1138,7 +1139,7 @@ while true; do
                                       --restart unless-stopped \
                                       weejewel/wg-easy
 
-                                    read -p "Installation complete. Press enter to continue..."
+                                    read -p "Installation complete.  you can enter the panel bu addressing ${GREEN}(http://serverip:TCPport)${NC} Press enter to continue..."
                                     ;;
                                 2)
                                     # Install WireGuard with SSL
