@@ -1066,14 +1066,23 @@ while true; do
 
          #Wiregaurd    
         17)
+
+            RED='\033[0;31m'
+            GREEN='\033[0;32m'
+            YELLOW='\033[1;33m'
+            BLUE='\033[0;34m'
+            MAGENTA='\033[0;35m'
+            CYAN='\033[0;36m'
+            GRAY='\033[0;37m'
+            NC='\033[0m' # No Color
             while true
             do
                 clear
                 echo "==== Main Menu ===="
                 echo "${YELLOW}1.${NC} Install WireGuard"
-                echo "${YELLOW}1.${NC} Update WireGuard"
-                echo "${YELLOW}1.${NC} Backup Users"
-                echo "${YELLOW}1.${NC} Exit"
+                echo "${YELLOW}2.${NC} Update WireGuard"
+                echo "${YELLOW}3.${NC} Backup Users"
+                echo "${YELLOW}4.${NC} Exit"
                 read -p "Enter your choice [1-4]: " choice
             
                 case $choice in
@@ -1084,8 +1093,8 @@ while true; do
                             clear
                             echo "==== Install WireGuard ===="
                             echo "${YELLOW}1.${NC} Install without SSL"
-                            echo "${YELLOW}1.${NC} Install with SSL"
-                            echo "${YELLOW}1.${NC} Back to main menu"
+                            echo "${YELLOW}2.${NC} Install with SSL"
+                            echo "${YELLOW}3.${NC} Back to main menu"
                             read -p "Enter your choice [1-3]: " install_choice
             
                             case $install_choice in
