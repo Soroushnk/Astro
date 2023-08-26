@@ -245,11 +245,11 @@ while true; do
              clear
             # show options to user
             echo -e "${YELLOW}1.${NC} ${YELLOW}Install iptables${NC}"
-            echo -e "${YELLOW}1.${NC} ${NC}Display forwarding table${NC}"
-            echo -e "${YELLOW}1.${NC} ${GREEN}Set up a tunnel${NC}"
-            echo -e "${YELLOW}1.${NC} ${RED}Delete a tunnel${NC}"
-            echo -e "${YELLOW}1.${NC} ${NC}1.${NC}Add commands to crontab"
-            echo -e "${RED}1.${NC} ${BLUE}Back to main menu${NC}"
+            echo -e "${YELLOW}2.${NC} ${NC}Display forwarding table${NC}"
+            echo -e "${YELLOW}3.${NC} ${GREEN}Set up a tunnel${NC}"
+            echo -e "${YELLOW}4.${NC} ${RED}Delete a tunnel${NC}"
+            echo -e "${YELLOW}5.${NC} ${NC}1.${NC}Add commands to crontab"
+            echo -e "${RED}6.${NC} ${BLUE}Back to main menu${NC}"
             echo " "
             echo "Please choose an option:"
             # read user input
