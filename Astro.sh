@@ -233,9 +233,7 @@ while true; do
             ;;
         5)
             # Function to add the iptables commands to crontab
-            
-            while true; do
-            RED='\033[0;31m'
+             RED='\033[0;31m'
             GREEN='\033[0;32m'
             YELLOW='\033[1;33m'
             BLUE='\033[0;34m'
@@ -243,14 +241,15 @@ while true; do
             CYAN='\033[0;36m'
             GRAY='\033[0;37m'
             NC='\033[0m' # No Color
+            while true; do
              clear
             # show options to user
-            echo "${YELLOW}1.${NC} ${YELLOW}Install iptables${NC}"
-            echo "${YELLOW}1.${NC} ${NC}Display forwarding table${NC}"
-            echo "${YELLOW}1.${NC} ${GREEN}Set up a tunnel${NC}"
-            echo "${YELLOW}1.${NC} ${RED}Delete a tunnel${NC}"
-            echo "${YELLOW}1.${NC} ${NC}1.${NC}Add commands to crontab"
-            echo "${RED}1.${NC} ${BLUE}Back to main menu${NC}"
+            echo -e "${YELLOW}1.${NC} ${YELLOW}Install iptables${NC}"
+            echo -e "${YELLOW}1.${NC} ${NC}Display forwarding table${NC}"
+            echo -e "${YELLOW}1.${NC} ${GREEN}Set up a tunnel${NC}"
+            echo -e "${YELLOW}1.${NC} ${RED}Delete a tunnel${NC}"
+            echo -e "${YELLOW}1.${NC} ${NC}1.${NC}Add commands to crontab"
+            echo -e "${RED}1.${NC} ${BLUE}Back to main menu${NC}"
             echo " "
             echo "Please choose an option:"
             # read user input
