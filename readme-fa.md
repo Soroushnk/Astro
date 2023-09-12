@@ -84,7 +84,7 @@
 ## 🛠️ مرحال اجرا
 میتونید به راحتی فقط با دستور زیر اسکریپت رو اجرا کنین : 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Ast.sh)
 ```
 یا اینکه :
 
@@ -93,34 +93,34 @@ bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 
 الف)
 ```bash
-wget https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh
+wget https://raw.githubusercontent.com/Soroushnk/Astro/main/Ast.sh
 
 ```
 
 ب) این کد کل پروژه رو دانلود میکنه:
 ```bash
-git clone https://github.com/Soroushnk/Astro.git
+git clone https://github.com/Soroushnk/Ast.git
 cd Astro
 ```
 حالا باید با کد زیر فایل رو قابل اجرا کنین:
 
 ```bash
-chmod +x Astro.sh
+chmod +x Ast.sh
 ```
 بعد با یکی از کد های زیر  توسط bash  کد رو اجرا کنین :
 
 ```bash 
-./Astro.sh
+./Ast.sh
 ```
 یا 
 
 ```bash 
-bash Astro.sh
+bash Ast.sh
 ```
 اگه هر مشکلی توی اجرای اسکریپت داشتین کد زیر رو اجرا کنین :
 ```bash 
-sed -i -e 's/\r$//' Astro.sh
-./Astro.sh
+sed -i -e 's/\r$//' Ast.sh
+./Ast.sh
 ```
 🌟 خوب دیگه کار تمومه  !!
 
