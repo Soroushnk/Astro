@@ -128,4 +128,4 @@ sed -i -e 's/\r$//' Astro.sh
 
 🌟 You are all set. enjoy !!
 
-## 🙏 Support
+## 🙏 Thank you
