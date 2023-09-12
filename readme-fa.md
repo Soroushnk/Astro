@@ -1,4 +1,4 @@
-<h1 align="center"> 🚀 Astro 🚀 </h1>
+<h1 align="center"> 🚀 Ast 🚀 </h1>
 <h3 align="center"> 🎗️A bash script that helps bypass GFW 🎗️</h3>
 <h3 align="center"> 🎗️یک اسکریپت bash که به دور زدن GFW کمک می کند 🎗️</h3>
 
