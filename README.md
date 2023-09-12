@@ -101,7 +101,7 @@ wget https://raw.githubusercontent.com/Rezaastara1380/Astro/main/Ast.sh
 
 (This will download the hole repository) 
 ```bash
-git clone https://github.com/Rezaastara1380/Astro.git
+git clone https://github.com/Rezaastara1380/Ast.git
 cd Astro
 ```
 2. Then you should make the file runable by using code below
@@ -123,7 +123,7 @@ bash Ast.sh
  
 ```bash 
 sed -i -e 's/\r$//' Ast.sh
-./Astro.sh
+./Ast.sh
 ```
 
 🌟 You are all set. enjoy !!
