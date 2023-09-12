@@ -8,7 +8,7 @@
   <img src="./assets/smenu.png" width="350" />
 </p>
 
- ### By Soroush Nekoozadeh
+ ### By Reza Ghahramani
 
 ## Table of Contents
 
