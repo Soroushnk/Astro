@@ -86,7 +86,7 @@ You can test it on other OS's like debian.
 1. You can simply run code by using code below 
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Rezaastara1380/Astro/main/Astro.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Rezaastara1380/Astro/main/Ast.sh)
 ```
 Or :
 
@@ -94,7 +94,7 @@ Or :
 
 a.
 ```bash
-wget https://raw.githubusercontent.com/Rezaastara1380/Astro/main/Astro.sh
+wget https://raw.githubusercontent.com/Rezaastara1380/Astro/main/Ast.sh
 
 ```
  b.
@@ -107,22 +107,22 @@ cd Astro
 2. Then you should make the file runable by using code below
 
 ```bash
-chmod +x Astro.sh
+chmod +x Ast.sh
 ```
 3. After that you should run the bash with one of the codes below
 
 ```bash 
-./Astro.sh
+./Ast.sh
 ```
 Or: 
 
 ```bash 
-bash Astro.sh
+bash Ast.sh
 ```
 4. If you have any error running the file just run the code below
  
 ```bash 
-sed -i -e 's/\r$//' Astro.sh
+sed -i -e 's/\r$//' Ast.sh
 ./Astro.sh
 ```
 
