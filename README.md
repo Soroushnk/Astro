@@ -15,7 +15,6 @@
 1. [Introduction](#%EF%B8%8F-introduction)
 2. [Features](#-features)
 3. [Installation Steps](#%EF%B8%8F-installation-steps)
-4. [Support](#-support)
 
 
 #
