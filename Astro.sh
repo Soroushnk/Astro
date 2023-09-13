@@ -615,7 +615,7 @@ while true; do
                 echo -e "${YELLOW}4.${NC} ${GRAY}alireza0 x-ui${NC}"
                 echo -e "${YELLOW}5.${NC} ${GRAY}3x-ui (MHSanaei)${NC}"
                 echo -e "${YELLOW}6.${NC} ${GRAY}kafka x-ui${NC}"
-                echo -e "${YELLOW}7.${NC} ${GRAY}alireza0 x-ui${NC}"
+                echo -e "${YELLOW}7.${NC} ${GRAY}marzban${NC}"
                 echo -e "${YELLOW}8.${NC} ${RED}Back to Main Menu${NC}"
                 echo -e""
 
