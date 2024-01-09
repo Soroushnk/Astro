@@ -1018,9 +1018,9 @@ while true; do
 
             case $choice in
                  1)
-                     wget -N --no-check-certificate https://raw.githubusercontent.com/sfc9982/AnyConnect-Server/main/ocserv-en.sh
-                     chmod +x ocserv-en.sh
-                     bash ./ocserv-en.sh
+                     
+                     bash <(curl -Ls https://raw.githubusercontent.com/sfc9982/AnyConnect-Server/main/ocserv-en.sh)
+                     
                      ;;
                  2)
                      sudo systemctl start ocserv
