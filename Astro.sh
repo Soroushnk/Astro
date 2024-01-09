@@ -1007,40 +1007,8 @@ while true; do
            ;;
 
          #  cisco open connect (oscerv)
-        14)
-            while true; do
-            clear
-            echo -e "${YELLOW}1.${NC} ${GRAY}Install ocserv${NC}"
-            echo -e "${YELLOW}2.${NC} ${GRAY}Run ocserv${NC}"
-            echo -e "${YELLOW}3.${NC} ${GRAY}Change ocserv port${NC}"
-            echo -e "${YELLOW}4.${NC} ${RED}Back to Main Menu${NC}"
-            read -e -p "Enter choice [1-4]: " choice
-
-            case $choice in
-                 1)
-                     
-                     bash <(curl -Ls https://raw.githubusercontent.com/sfc9982/AnyConnect-Server/main/ocserv-en.sh)
-                     
-                     ;;
-                 2)
-                     sudo systemctl start ocserv
-                    ;;
-                 3)
-                    read -p "Enter new TCP port number: " port
-                    sudo sed -i "s/tcp-port = [0-9]*/tcp-port = $port/" /etc/ocserv/ocserv.conf
-                     echo "TCP port set to $port"
-                     echo -e "Press ${RED}ENTER${NC} to continue"
-                     read -s -n 1
-                    ;;
-                4)
-                    break
-                     ;;
-                *)
-                    echo "Invalid choice. Please enter a valid option."
-                    ;;
-       
-                esac
-            done
+        14)        
+            bash <(curl -Ls https://raw.githubusercontent.com/sfc9982/AnyConnect-Server/main/ocserv-en.sh)    
             echo -e "Press ${RED}ENTER${NC} to continue"
             read -s -n 1
             ;;
