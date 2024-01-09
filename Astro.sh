@@ -12,8 +12,8 @@ NC='\033[0m' # No Color
 if [ "$(id -u)" != "0" ]; then
     echo "This script must be run as root"
     sleep .5 
-    #su -s /bin/bash -c "$0 $*" root
-   # exit 1
+    su -s /bin/bash -c "$0 $*" root
+    exit 1
 fi
 echo "Running as root..."
 sleep .5
