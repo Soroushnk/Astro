@@ -13,7 +13,7 @@ NC='\033[0m' # No Color
 if [ "$(id -u)" != "0" ]; then
     echo "此脚本必须以root身份运行"
     sleep .5 
-    #su -s /bin/bash -c "$0 $*" root
+    su -s /bin/bash -c "$0 $*" root
     #exit 1
 fi
 echo "以root身份运行中..."
