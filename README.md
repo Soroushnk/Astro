@@ -88,6 +88,15 @@ You can test it on other OS's like debian.
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
 ```
+对于中文版:
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro-chineese.sh)
+```
+Для русского
+версия :
+```bash
+bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro-russian.sh)
+```
 Or :
 
 1. First you should download the script usingone of the codes  below :
