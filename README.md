@@ -86,7 +86,7 @@ You can test it on other OS's like debian.
 1. You can simply run code by using code below 
 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro-main.sh)
 ```
 对于中文版:
 ```bash
