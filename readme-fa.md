@@ -85,7 +85,7 @@
 ## 🛠️ مرحال اجرا
 میتونید به راحتی فقط با دستور زیر اسکریپت رو اجرا کنین : 
 ```bash
-bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro.sh)
+bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro-main.sh)
 ```
 یا اینکه :
 
