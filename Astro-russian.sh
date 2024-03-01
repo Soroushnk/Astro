@@ -12,7 +12,7 @@ NC='\033[0m' # No Color
 if [ "$(id -u)" != "0" ]; then
     echo "Этот скрипт должен быть запущен от имени root"
     sleep .5 
-    #su -s /bin/bash -c "$0 $*" root
+    su -s /bin/bash -c "$0 $*" root
     #exit 1
 fi
 echo "Запускается от имени root..."
