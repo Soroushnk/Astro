@@ -97,8 +97,8 @@ bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro-chi
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/Soroushnk/Astro/main/Astro-russian.sh)
 ```
-Or :
-
+Or  if you want to run it offline :
+(remember that youre using old version for this)
 1. First you should download the script usingone of the codes  below :
 
 a.
