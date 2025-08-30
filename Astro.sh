@@ -761,7 +761,7 @@ while true; do
                         bash <(curl -sL https://raw.githubusercontent.com/aleskxyz/reality-ezpz/master/reality-ezpz.sh) --m
                         ;;
                     5)
-                        exit 0
+                        break
                         ;;
                     *)
                         echo "Invalid choice. Press Enter to continue..."
@@ -895,7 +895,11 @@ while true; do
                        read -p "TCP Port (default 51821): " TCP_PORT; TCP_PORT=${TCP_PORT:-51821}; if ! validate_port "$TCP_PORT"; then continue; fi
                        run_command docker run -d --name=wg-easy -e WG_HOST="$WG_HOST" -e PASSWORD="$PASSWORD" -v ~/.wg-easy:/etc/wireguard -p "$UDP_PORT:$UDP_PORT/udp" -p "$TCP_PORT:$TCP_PORT/tcp" --cap-add=NET_ADMIN --cap-add=SYS_MODULE --sysctl="net.ipv4.conf.all.src_valid_mark=1" --sysctl="net.ipv4.ip_forward=1" --restart unless-stopped weejewel/wg-easy ;;
                     2) run_command docker stop wg-easy; run_command docker rm wg-easy; run_command docker pull weejewel/wg-easy
-                       # Re-prompt for params and run docker run as in 1 ;;
+                       read -p "Server IP/Domain: " WG_HOST
+                       read -p "Admin Password: " PASSWORD
+                       read -p "UDP Port (default 51820): " UDP_PORT; UDP_PORT=${UDP_PORT:-51820}; if ! validate_port "$UDP_PORT"; then continue; fi
+                       read -p "TCP Port (default 51821): " TCP_PORT; TCP_PORT=${TCP_PORT:-51821}; if ! validate_port "$TCP_PORT"; then continue; fi
+                       run_command docker run -d --name=wg-easy -e WG_HOST="$WG_HOST" -e PASSWORD="$PASSWORD" -v ~/.wg-easy:/etc/wireguard -p "$UDP_PORT:$UDP_PORT/udp" -p "$TCP_PORT:$TCP_PORT/tcp" --cap-add=NET_ADMIN --cap-add=SYS_MODULE --sysctl="net.ipv4.conf.all.src_valid_mark=1" --sysctl="net.ipv4.ip_forward=1" --restart unless-stopped weejewel/wg-easy ;;
                     3) run_command cp ~/.wg-easy/wg0.conf /root; run_command cp ~/.wg-easy/wg0.json /root ;;
                     4) read -p "Peer Name: " peer
                        wg genkey | tee "$peer.private" | wg pubkey > "$peer.public"
@@ -1253,6 +1257,85 @@ EOF
                 esac
             done
             ;;
+        32)
+            while true; do
+                clear
+                echo -e "${GREEN}Awesome Bash Resources Menu${NC}"
+                echo "1. Install bashttpd (Bash Web Server)"
+                echo "2. Install xiringuito (SSH VPN)"
+                echo "3. Back"
+                read -p "Choice: " sub
+                case $sub in
+                    1) run_command curl -O https://raw.githubusercontent.com/avleen/bashttpd/master/bashttpd; chmod +x bashttpd; ./bashttpd ;;
+                    2) run_command bash <(curl -Ls https://raw.githubusercontent.com/ivanilves/xiringuito/master/install.sh) ;;
+                    3) break ;;
+                esac
+                press_enter
+            done
+            ;;
+        35)
+            run_command curl -Ls https://raw.githubusercontent.com/apernet/hysteria/master/install.sh | bash
+            while true; do
+                clear
+                echo -e "${GREEN}Hysteria 2 Menu${NC}"
+                echo "1. Generate Config"
+                echo "2. Start Server"
+                echo "3. Add Client QR"
+                echo "4. Back"
+                read -p "Choice: " sub
+                case $sub in
+                    1) read -p "Port: " port; if ! validate_port "$port"; then continue; fi
+                       hysteria config -c /etc/hysteria/config.yaml ;;
+                    2) hysteria -c /etc/hysteria/config.yaml server ;;
+                    3) # Generate and QR ;;
+                    4) break ;;
+                esac
+                press_enter
+            done
+            ;;
+        27)
+            while true; do
+                clear
+                echo -e "${GREEN}CLI Tools Menu${NC}"
+                echo "1. Install rclone (Cloud Sync)"
+                echo "2. Install sysdig (System Monitor)"
+                echo "3. Back"
+                read -p "Choice: " sub
+                case $sub in
+                    1) run_command curl https://rclone.org/install.sh | bash ;;
+                    2) run_command apt install sysdig -y; sysdig -c topprocs_cpu ;;
+                    3) break ;;
+                esac
+                press_enter
+            done
+            ;;
+        23)
+            git clone https://github.com/zenfish/bash-vpn
+            cd bash-vpn
+            read -p "Country Code (e.g., US): " country
+            ./vpn.sh $country
+            press_enter
+            ;;
+        37)
+            run_command wget https://www.softether-download.com/files/v4/SoftEther_VPN_Server-v4.41-9782-rtm-2023.03.14-linux-x64-64bit.tar.gz
+            run_command tar xzf SoftEther*.tar.gz; cd vpnserver; make
+            ./vpnserver start
+            while true; do
+                read -p "Add user? (y/n): " add; if [[ $add != "y" ]]; then break; fi
+                ./vpncmd /SERVER localhost /CMD UserCreate user /GROUP:none /REALNAME:user /NOTE:none
+            done
+            press_enter
+            ;;
+        39)
+            run_command curl -sfL https://raw.githubusercontent.com/aquasecurity/trivy/main/contrib/install.sh | sh -x -- --version v0.53.0
+            trivy fs /
+            press_enter
+            ;;
+        40)
+            run_command apt install vnstat -y
+            vnstat -m  # Monthly graph
+            press_enter
+            ;;
         30)
             clear
             echo -e "${BLUE}########################################${NC}"
@@ -1266,6 +1349,8 @@ EOF
             echo -e "Uses code from various GitHub repos; see sources in script."
             press_enter
             ;;
+
+        
         # EXIT
         0)
             echo ""
