@@ -263,8 +263,8 @@ while true; do
                         ;;
                     4)
                         echo "Installing rsnapshot..."
-                        apt-get update
-                        apt-get install -y rsnapshot
+                        run_command apt-get update
+                        run_command apt-get install -y rsnapshot
                         echo "Rsnapshot installed successfully."
                         read -p "Press Enter to continue."
                         ;;
@@ -1015,16 +1015,19 @@ while true; do
                            config_file="config.real"
                        fi
                        run_command curl -s https://raw.githubusercontent.com/MortezaBashsiz/CFScanner/main/bash/ClientConfig.json -o "$config_file" ;;
-                    2) vpn="NO"; mode="SUBNET"; direction="BOTH"; threshold=3; max_tries=3; config_file="config.real"; interval=5; threads=10
-                       # Prompt for params as in your original
-                       read -p "VPN (YES/NO, default NO): " input_vpn; vpn=${input_vpn:-$vpn}
-                       # ... (add prompts for other params like mode, etc.)
-                       ./cfScanner.sh -vpn "$vpn" -m "$mode" -t "$direction" -thr "$threshold" -try "$max_tries" -c "$config_file" -s "$interval" -n "$threads" | column -t ;;
+                    2)
+                        vpn="NO"; mode="SUBNET"; direction="BOTH"; threshold=3; max_tries=3; config_file="config.real"; interval=5; threads=10
+                        read -p "VPN (YES/NO, default NO): " input_vpn; vpn=${input_vpn:-$vpn}
+                        read -p "Mode (SUBNET/IP, default SUBNET): " input_mode; mode=${input_mode:-$mode}
+                        read -p "Direction (BOTH/DOWN/UP, default BOTH): " input_dir; direction=${input_dir:-$direction}
+                        # Add similar for threshold, etc.
+                        ./cfScanner.sh -vpn "$vpn" -m "$mode" -t "$direction" -thr "$threshold" -try "$max_tries" -c "$config_file" -s "$interval" -n "$threads" | column -t ;;
                     3) # Assume scan runs first; parse best IP
-                       best_ip=$(./cfScanner.sh ... | head -1 | awk '{print $1}')  # Run scan and parse
-                       read -p "Config file to apply (e.g., /etc/x-ui/config.json): " config
-                       sed -i "s/\"address\": \".*\"/\"address\": \"$best_ip\"/" "$config"
-                       echo "Best IP applied." ;;
+                        vpn="NO"; mode="SUBNET"; direction="BOTH"; threshold=3; max_tries=3; config_file="config.real"; interval=5; threads=10
+                        best_ip=$(./cfScanner.sh -vpn "$vpn" -m "$mode" -t "$direction" -thr "$threshold" -try "$max_tries" -c "$config_file" -s "$interval" -n "$threads" | head -1 | awk '{print $1}')
+                        read -p "Config file to apply: " config
+                        sed -i "s/\"address\": \".*\"/\"address\": \"$best_ip\"/" "$config"
+                        echo "Best IP applied." ;;
                     4) break ;;
                     *) echo "Invalid choice"; press_enter ;;
                 esac
